@@ -1,0 +1,53 @@
+
+* {
+  overflow: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+img {
+  max-width: 10%;
+  max-height: 10%;
+  padding: 15px
+}
+
+
+a {
+  text-transform: uppercase;
+  outline-style: none;
+  text-align: center;
+  transition: 2s;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0;
+  width: 100%;
+  display: block;
+  color: darkolivegreen;
+}
+
+
+
+/*animated line*/
+a:hover {
+  color: burlywood;
+}
+
+a::after {
+  vertical-align: top;
+  display: block;
+  margin: 0 auto;
+  content: '';
+  width: 0;
+  height: 2px;
+  transition: width 1s;
+  background-color: burlywood;
+}
+
+a:hover::after {
+  vertical-align: top;
+  width: 100%;
+  transition: width 3s;
+}

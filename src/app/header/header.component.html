@@ -1,0 +1,39 @@
+<html>
+
+<header>
+</header>
+<body>
+
+<nav>
+  <img src="assets/logo.png" alt="logo">
+  <div class="container is-primary">
+
+
+
+  <div class="columns">
+    <div class="column">
+      <a style="text-decoration: none; cursor:pointer;" routerLink="/home" class="home"
+              routerLinkActive="active">
+        - Home -
+      </a>
+    </div>
+
+    <div class="column">
+      <a *ngIf="router.url != '/portfolio'" style="text-decoration: none; cursor:pointer;" routerLink="/portfolio"
+              class="portfolio"
+              routerLinkActive="active">
+        - Portfolio -
+      </a>
+    </div>
+
+    <div class="column">
+      <a *ngIf="router.url != '/about'" style="text-decoration: none; cursor:pointer;" routerLink="/about"
+              routerLinkActive="active">- About -
+      </a>
+    </div>
+
+  </div>
+  </div>
+</nav>
+</body>
+</html>

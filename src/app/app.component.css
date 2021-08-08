@@ -1,0 +1,9 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+@font-face {
+  font-family: "MrsEaves";
+  src: local("MrsEaves"), url('../assets/fonts/mrs-eaves/MRSEAV~1.TTF') format("truetype");
+}
